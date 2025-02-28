@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "234320987485",
+    "project_id": "auth-1351f",
+    "storage_bucket": "auth-1351f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234320987485:android:c92d657b66be69824714b4",
+        "android_client_info": {
+          "package_name": "com.example.fruits_market"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBTi4NdDL1OKHJxb6CEL8xqHLU5GjFjiVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
