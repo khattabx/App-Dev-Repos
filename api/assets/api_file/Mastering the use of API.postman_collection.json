@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "5f4a24c1-2f9e-4b25-aea8-9aeded8624c7",
+		"name": "Mastering the use of API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24738543",
+		"_collection_link": "https://www.postman.com/warped-astronaut-700800/workspace/api/collection/24738543-5f4a24c1-2f9e-4b25-aea8-9aeded8624c7?action=share&source=collection_link&creator=24738543"
+	},
+	"item": [
+		{
+			"name": "sign up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "anas user",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "01101459565",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "anas42399@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "anas123",
+							"type": "text"
+						},
+						{
+							"key": "confirmPassword",
+							"value": "anas123",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "{\"name\":\"methalfa\",\"address\":\"meet halfa\",\"coordinates\":[30.1572709,31.224779]}",
+							"type": "text"
+						},
+						{
+							"key": "profilePic",
+							"type": "file",
+							"src": "/E:/Second_Term/desktop/new/Work/Images/three.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://food-api-omega.vercel.app/api/v1/user/signup",
+					"protocol": "https",
+					"host": [
+						"food-api-omega",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "check email",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"anas423999@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://food-api-omega.vercel.app/api/v1/user/check-email",
+					"protocol": "https",
+					"host": [
+						"food-api-omega",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"check-email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sign in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"anas423999@gmail.com\",\r\n    \"password\":\"anas123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://food-api-omega.vercel.app/api/v1/user/signin",
+					"protocol": "https",
+					"host": [
+						"food-api-omega",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update user",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "token",
+						"value": "FOODAPI eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OWVmNDExNjFjYWZjOTg5ZGE4YmQ2YSIsImVtYWlsIjoiYW5hcy5yb3V0ZUBnbWFpbC5jb20iLCJuYW1lIjoidGVzdHBob25lIiwiaWF0IjoxNjg4MTYyMDI1fQ.qxLbn5n2g1MXNwAuqMx4nwlmuMbCIsSbY4j_FzHeV9E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "saeed",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "1101459565",
+							"type": "text"
+						},
+						{
+							"key": "location",
+							"value": "{\"name\":\"Egypt\",\"address\":\"meet halfa\",\"coordinates\":[1214451511,12541845]}",
+							"type": "text"
+						},
+						{
+							"key": "profilePic",
+							"type": "file",
+							"src": "/E:/Second_Term/desktop/new/Work/Images/bgs - Copy.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://food-api-omega.vercel.app/api/v1/user/update",
+					"protocol": "https",
+					"host": [
+						"food-api-omega",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "token",
+						"value": "FOODAPI eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OWVmNDExNjFjYWZjOTg5ZGE4YmQ2YSIsImVtYWlsIjoiYW5hcy5yb3V0ZUBnbWFpbC5jb20iLCJuYW1lIjoidGVzdHBob25lIiwiaWF0IjoxNjg4MTYyMDI1fQ.qxLbn5n2g1MXNwAuqMx4nwlmuMbCIsSbY4j_FzHeV9E",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://food-api-omega.vercel.app/api/v1/user/delete?id=64a1fa760db6e1f0ad3c52e6",
+					"protocol": "https",
+					"host": [
+						"food-api-omega",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "64a1fa760db6e1f0ad3c52e6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get user data",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "FOODAPI eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OWVmNDExNjFjYWZjOTg5ZGE4YmQ2YSIsImVtYWlsIjoiYW5hcy5yb3V0ZUBnbWFpbC5jb20iLCJuYW1lIjoidGVzdHBob25lIiwiaWF0IjoxNjg4MTYyMDI1fQ.qxLbn5n2g1MXNwAuqMx4nwlmuMbCIsSbY4j_FzHeV9E",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://food-api-omega.vercel.app/api/v1/user/get-user/64a1fc7dc5b2fe879468c637",
+					"protocol": "https",
+					"host": [
+						"food-api-omega",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"get-user",
+						"64a1fc7dc5b2fe879468c637"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "log out",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "token",
+						"value": "FOODAPI eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0OWVmNDExNjFjYWZjOTg5ZGE4YmQ2YSIsImVtYWlsIjoiYW5hcy5yb3V0ZUBnbWFpbC5jb20iLCJuYW1lIjoidGVzdHBob25lIiwiaWF0IjoxNjg4MTYyMDI1fQ.qxLbn5n2g1MXNwAuqMx4nwlmuMbCIsSbY4j_FzHeV9E",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "https://food-api-omega.vercel.app/api/v1/user/logout",
+					"protocol": "https",
+					"host": [
+						"food-api-omega",
+						"vercel",
+						"app"
+					],
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
